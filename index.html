@@ -12,7 +12,9 @@
       {{name}}<br>
       {{sayMessage()}}<br>
       {{sayLovesMessage()}}<br>
-      Cost: {{cookieCost | currency: $: 2}}
+      Cost: {{cookieCost | currency: $: 2}} <br>
+      Truth: {{sayLovesMessage() | truth : 'really':'just'}}<br>
+      BIG TRUTH: Truth: {{sayLovesMessage() | truth : 'really':'just' | uppercase}}
     </div>
   </body>
 </html>
